@@ -739,9 +739,9 @@ event MerkleRootAnchored(
 ### Essential Reading (In Order)
 
 1. **[docs/INVARIANTS.md](./docs/INVARIANTS.md)** - Core design principles (⭐ START HERE)
-2. 2. **[docs/STUDY_GUIDE.md](./docs/STUDY_GUIDE.md)** - Proof correctness
+2. **[docs/STUDY_GUIDE.md](./docs/STUDY_GUIDE.md)** - Proof correctness
 3. **[docs/CRYPTOGRAPHIC_VERIFICATION.md](./docs/CRYPTOGRAPHIC_VERIFICATION.md)** - Proof correctness
-4. 2. **[docs/LOG_RETENTION_POLICY.md](./docs/LOG_RETENTION_POLICY.md)** - Proof correctness
+4. **[docs/LOG_RETENTION_POLICY.md](./docs/LOG_RETENTION_POLICY.md)** - Proof correctness
 5. **[docs/TESTING_GUIDE.md](./docs/TESTING_GUIDE.md)** - Testing methodology
 
 
@@ -837,22 +837,6 @@ DEBUG=sealog:* npm run dev
 # Or set in .env
 LOG_LEVEL=debug
 ```
-
----
-
-## 🔮 Future Roadmap
-
-### Phase 2: Enterprise Integration
-- SIEM connector library (Splunk, Elastic, QRadar)
-- Multi-chain anchoring (Arbitrum, Optimism, Polygon)
-- Post-quantum cryptography support
-- Real-time anomaly alerting webhooks
-
-### Phase 3: Scalability
-- Sharded Merkle trees for 1M+ logs
-- Off-chain proof aggregation
-- Optimistic rollup integration
-- Distributed verification network
 
 ---
 
