@@ -119,6 +119,7 @@ SeaLog/
 │   ├── CRYPTOGRAPHIC_VERIFICATION.md
 │   ├── INVARIANTS.md
 │   ├── LOG_RETENTION_POLICY.md
+│   ├── PRE_DEPLOYMENT_SANITY_CHECK.md
 │   ├── STUDY_GUIDE.md
 │   └── TESTING_GUIDE.md
 │
@@ -736,14 +737,18 @@ event MerkleRootAnchored(
 
 ## 📚 Documentation
 
-### Essential Reading (In Order)
+### Essential Reading (Recommended Order)
 
-1. **[docs/INVARIANTS.md](./docs/INVARIANTS.md)** - Core design principles (⭐ START HERE)
-2. **[docs/STUDY_GUIDE.md](./docs/STUDY_GUIDE.md)** - Proof correctness
-3. **[docs/CRYPTOGRAPHIC_VERIFICATION.md](./docs/CRYPTOGRAPHIC_VERIFICATION.md)** - Proof correctness
-4. **[docs/LOG_RETENTION_POLICY.md](./docs/LOG_RETENTION_POLICY.md)** - Proof correctness
-5. **[docs/TESTING_GUIDE.md](./docs/TESTING_GUIDE.md)** - Testing methodology
+1. **[docs/INVARIANTS.md](./docs/INVARIANTS.md)** ⭐ Core security guarantees and the 11 immutable system invariants
+2. **[docs/STUDY_GUIDE.md](./docs/STUDY_GUIDE.md)** Understanding SeaLog's architecture, trust model, and verification workflow
+3. **[docs/CRYPTOGRAPHIC_VERIFICATION.md](./docs/CRYPTOGRAPHIC_VERIFICATION.md)** Merkle proofs, blockchain anchoring, and cryptographic validation
+4. **[docs/LOG_RETENTION_POLICY.md](./docs/LOG_RETENTION_POLICY.md)** Log lifecycle, retention requirements, and compliance considerations
+5. **[docs/TESTING_GUIDE.md](./docs/TESTING_GUIDE.md)** Testing methodology, invariant validation, and verification procedures
+6. **[docs/PRE_DEPLOYMENT_SANITY_CHECK.md](./docs/PRE_DEPLOYMENT_SANITY_CHECK.md)** Final deployment readiness checklist and cryptographic sanity verification
 
+> New contributors should start with **INVARIANTS.md** before reading any implementation code.
+>
+> Before deploying to a public blockchain, complete all checks in **PRE_DEPLOYMENT_SANITY_CHECK.md** to ensure Merkle construction, proof verification, and cryptographic invariants remain intact.
 
 ---
 
